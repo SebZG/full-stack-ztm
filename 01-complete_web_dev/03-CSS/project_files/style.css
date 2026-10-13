@@ -1,0 +1,48 @@
+body {
+    background-image: url("https://images.unsplash.com/photo-1507525428034-b723cf961d3e");
+    background-size: cover;
+}
+
+h2 {
+    color: red;
+    text-align: center;
+    border: 5px dashed purple;
+    cursor: pointer;
+}
+
+p {
+    color: blue;
+    text-decoration: underline;
+    text-transform: uppercase;
+    line-height: 1.75;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+span {
+    font-size: 5em; /* n * the parent font-size = 200px  */
+    font-size: 5rem; /* Relative to Root (<HTML>)  */
+}
+
+img {
+    float: left;
+}
+
+footer p {
+    clear: both;
+    color: yellow;
+}
+
+li {
+    display: inline-block;
+}
+
+.box {
+    border: 5px solid red;
+    display: inline-block;
+    padding: 5px 20px 5px 20px; /*  top, right, bottom, left */
+    margin: 0 20px; /* top, bottom  */
+    width: 200px; /* content  */
+}

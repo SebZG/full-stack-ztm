@@ -1,0 +1,21 @@
+h1 {
+    font-family: fantasy;
+    font-size: 3em;
+    border-right: 2px solid pink;
+    border-bottom: 2px solid pink;
+    width: 350px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*flex-flow: row wrap;*/
+    justify-content: center;
+}
+img {
+    width: 450px;
+    height: 300px;
+    margin: 10px;
+}
