@@ -1,0 +1,50 @@
+CREATE TABLE users (
+    name text,
+    age smallint,
+    birthday date
+);
+
+INSERT INTO users (
+    name, age, birthday
+) VALUES (
+    'Seb', 36, '1990-10-12'
+);
+
+SELECT * FROM users;
+
+ALTER TABLE users ADD score smallint;
+UPDATE users
+SET score = 100
+WHERE name = 'Seb';
+
+UPDATE users
+SET score = 100
+WHERE name = 'Seb'
+OR name = 'Michael';
+
+SELECT * FROM users WHERE name LIKE 'S%';
+SELECT * FROM users ORDER BY score DESC;
+
+SELECT AVG(score) FROM users;
+SELECT SUM(score) FROM users;
+SELECT COUNT(name) FROM users;
+
+CREATE TABLE login (
+    ID serial NOT NULL PRIMARY KEY,
+    secret VARCHAR(100) NOT NULL,
+    name text NOT NULL
+);
+
+INSERT INTO
+	login (SECRET, NAME)
+VALUES
+	('abc', 'Seb');
+
+SELECT * FROM users
+JOIN login
+ON users.name = login.name;
+
+DELETE FROM users 
+WHERE name = 'Seb';
+
+DROP TABLE login;
